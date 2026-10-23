@@ -8,8 +8,10 @@ public class RandomDe : MonoBehaviour
 
     public void LanceDe()
     {
-        ResultatDe = Random.Range(1, 7);
+        if (player.IsMoving)
+            return;
 
+        ResultatDe = Random.Range(1, 7);
         Debug.Log("Résultat du dé : " + ResultatDe);
 
         player.MoveByDiceResult(ResultatDe);
