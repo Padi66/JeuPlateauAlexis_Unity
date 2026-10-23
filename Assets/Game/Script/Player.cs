@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
     [Header("Références")]
